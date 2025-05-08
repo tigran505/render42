@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: remark42
+    env: docker
+    plan: free
+    region: frankfurt
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: REMARK_URL
+        value: https://remark42-tigran.onrender.com
+      - key: SITE
+        value: quartz
+      - key: AUTH_ANON
+        value: "true"
+      - key: AUTH_EMAIL_ENABLE
+        value: "true"

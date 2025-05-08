@@ -1,0 +1,1 @@
+FROM umputun/remark42:latest
